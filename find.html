@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="css/style.css" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Find - Kokoa Clone</title>
+  </head>
+  <body>
+    <div class="status-bar">
+      <div class="status-bar__column">
+        <span>No Service</span>
+        <i class="fa-solid fa-wifi"></i>
+      </div>
+      <div class="status-bar__column">
+        <span>18:43</span>
+      </div>
+      <div class="status-bar__column">
+        <span>11%</span>
+        <i class="fa-solid fa-battery-full"></i>
+        <i class="fa-solid fa-bolt"></i>
+      </div>
+    </div>
+    <header class="screen-header">
+      <h1 class="screen-header__title">Find</h1>
+      <div class="screen-header__icons">
+        <span><i class="fa-solid fa-magnifying-glass fa-lg"></i></span>
+        <span>
+          <a href="settings.html">
+            <i class="fa-solid fa-gear fa-lg"></i>
+          </a>
+          <div class="point"></div>
+        </span>
+      </div>
+    </header>
+
+    <main class="main-screen">
+      <div class="icon-row">
+        <div class="icon-row__icon">
+          <i class="fas fa-qrcode"></i>
+          <span>QR Code</span>
+        </div>
+        <div class="icon-row__icon">
+          <i class="far fa-address-book"></i>
+          <span>Add by Contacts</span>
+        </div>
+        <div class="icon-row__icon">
+          <i class="fas fa-fingerprint"></i>
+          <span>Add by ID</span>
+        </div>
+        <div class="icon-row__icon">
+          <i class="far fa-envelope"></i>
+          <span>Invite</span>
+        </div>
+      </div>
+      <div class="recommended-friends">
+        <h6 class="recommended-friends__title">Recommentded-friends</h6>
+        <span>You have no recommended friends.</span>
+      </div>
+      <div class="open-chat">
+        <div class="open-chat__header">
+          <h6>Open Chat</h6>
+          <h6>
+            Go to Openchat Home
+            <i class="fas fa-chevron-right fa-xs"></i>
+          </h6>
+        </div>
+        <div class="open-post">
+          <div class="open-post__column">
+            <h5 class="open-post__title">#BTS</h5>
+            <h6 class="open-post__hashtags">#bts#army#friends</h6>
+            <div class="open-post__members">
+              <img
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR0R6w1iYfafZX6ITkh9FjICK5LeQE2ZYzLCw&usqp=CAU"
+              />
+              <span class="open-post__member-count">802 members</span>
+              <div class="divider"></div>
+              <span class="open-post__member-status">Active</span>
+            </div>
+          </div>
+          <div class="open-post__column">
+            <div class="open-post__photo">
+              <img
+                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAolBMVEX+3AAAAAD/4gIAAAMAAAmZhQbmxwnnyhHz1QgsJwakkAr/4wNwYQ0AAAb/5QX/4AByZw4pIgihiQjszxFXSwfApgbRtwn+2gRCOAaqlAr52QsmIwPw0QoeGweNfg5YUQ1PRhK5oA87NAozLgsPCwdUSg7NsAxNQxCAbRdoXhBJPhBzaRCBcg4XFAZmWhAdFQsyKAvdwA+zmgsQBAiZiwslIA2sl29PAAAETUlEQVR4nO3bC1faPBzH8bYpF8E0KILCAzrFC5uIusv7f2tPoSZtaVK8QTv3/ZyzszOIXX5Nm6X/dJ4HAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwD2q2No27KttgXGyR12xnWqsgmJhv+kH+UJVo+0XT8343baGmliZZYpi2VYMLkf3q26WqOqMtoS/CUdqvoLMl4ZU5Hap/IvPfSf+sGVQSzLAm9IU4TyP2pbQ20m07OoJqzXxR+P56WO0o2hP6Qv7U/T6Nbordzpq8NFTjK2vD6cT1l++FI6Hvh6Zf6rI04U2k2zXs7WSv0kF0JvQb5v4Zl12l8lL3X7lOhOhXFG7NmVBemYSqV5IwHOtWt86EoyonG5Ow0D1pri1332M93ftgpFsVWp/XIqF/d9/r9e4vQvPBqWk0nvcS3831+kN/YmbK4NicrOl9fKzDWaij9mqRUIyibixaWBJ6QXct6pv8x1HyUbo0yCRsrb6M2mapcFiPhMk/a0HDllBrmoSNQqczCV9mloOvn1B83YTJvUnC/SBhHgl1wuSTh1XC1a/lV0040Iabbffp8xKqY71ck7fJVaqMHYco9YljaNal/rJb/NHKpOvSzYTCcuZLxzB9jBTzcfFnq1IYQ303yUfLQJQl9CaZZ4rpICr+dDUyCdVpTC31nxeWCbA0YfeHn7HsV1yB0tKr9Ohs5UkPRPj8xqvUU4Pck6EceVUXEtdcz/hyYeteaUJPLXPlDnH3XIcZx5XwxjpXlCf0Jke5crCQjRqMoqNeurC33pJQ9f/kKxjht0nlGe0JHwf2jm1J6Kn2nchnfHiuesKxV/WFPHzPVbqqCp9v1vWH9azq+/7F22eaNXU7lbk59bq5y/5v56yXCluGVyT0gvE8zB3pbpf93y5N+PBfbGp2YUTYLrZ+TULPi26PcpfqqB4rb7+z6kd7MDWXWKfYsdcljO/GReY6FU+VrlILK++hmQxPikvLVyaMV3DxMKYhK91f21x5e9GV/uTpAwlXd2M6iMd1esb3ohN97o8+kjAexrkZxHrsW3xCQvNkn/zeNNNNTfYtPpywNdSSmWVcz6r++xNm6h+1rup/IOFfsm/xOQnrXBEmIQlJuH+b69IvPJd+ZsLkdSpVs4RiFK21H/2PJpSX6yMNTeOaJEzI9KHnrQk7m4cyz2H3tUhYdFes55buzPx0vjm1/UFkh9x1Glu/Slfez5aXS5MjOWqT++FOKCw1stKEwcyR8NpS8dkf97uJh5b9sS07M0LaMkpLwWePnAkPbCd+yxPw3Poi6snOQ5Sy17x9MWu+pyLc26jpx0eSFxXvB9vHMFzYd1S27luM8sVgX4Tnu+3/du1fB5tmy98tx/Te+vPSZuq4t4L26PDsSR/p6vtoUvXGTLxKCwpK3g4JukkT9/+FUaobdTPH2kmnAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/gb/A/LTQ8kzT4EHAAAAAElFTkSuQmCC"
+              />
+              <div class="open-post__heart-count">
+                <i class="fas fa-heart fa-xs"></i><span>326</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <nav class="nav">
+      <ul class="nav__list">
+        <li class="nav__btn">
+          <a href="friends.html" class="nav__link">
+            <i class="fa-regular fa-user fa-2x"></i>
+          </a>
+        </li>
+        <li class="nav__btn">
+          <a href="chats.html" class="nav__link">
+            <span class="nav__notification badge">1</span>
+            <i class="fa-regular fa-comment fa-2x"></i>
+          </a>
+        </li>
+        <li class="nav__btn">
+          <a href="find.html" class="nav__link"
+            ><i class="fa-solid fa-magnifying-glass fa-2x"></i
+          ></a>
+        </li>
+        <li class="nav__btn">
+          <a href="more.html" class="nav__link">
+            <span class="nav__alarm"></span>
+            <i class="fa-solid fa-ellipsis fa-2x"> </i>
+          </a>
+        </li>
+      </ul>
+    </nav>
+
+    <div class="no-mobile">
+      <span>Your screen is too big</span>
+    </div>
+
+    <script
+      src="https://kit.fontawesome.com/73bf4692c2.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
